@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: nunito;
-  transition: 0.3s ease;
+  transition: 250ms ease-in;
   scroll-behavior: smooth;
 }
 @font-face {
@@ -193,7 +193,7 @@ header {
 }
 .navigation a:hover,
 .navigation_for_mobile a:hover {
-  color: rgb(166, 166, 252);
+  color: var(--pColor);
 }
 
 .work {
