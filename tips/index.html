@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typed js tutorial</title>
+    <style>
+      h1 {
+        color: cornflowerblue;
+      }
+      p {
+        color: darkblue;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to add typing text animation to your website</h1>
+    <p class="my_typed_class"></p>
+
+    <!-- import typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      // here is the magic
+      new Typed(".my_typed_class", {
+        strings: [
+          "I build android and ios apps",
+          "I convert websites into apps",
+          "I create digital educational content ",
+        ],
+        typeSpeed: 10,
+        loop: true,
+        backSpeed: 5,
+        backDelay: 2000,
+      });
+    </script>
+  </body>
+</html>
