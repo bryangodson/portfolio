@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: nunito;
+  src: url(../fonts/nunito.ttf);
+}
+@font-face {
+  font-family: pacifico;
+  src: url(../fonts/pacifico.ttf);
+}
+:root {
+  --pColor: #5f2610;
+  --sColor: #8f5d1b;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: #8f5d1bab;
+}
