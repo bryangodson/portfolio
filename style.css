@@ -16,11 +16,8 @@
 }
 :root {
   --pColor: #13234b;
-  /* --sColor: rgba(180, 55, 58, 0.8); */
   --sColor: #a0c2e2;
   --accent: #ea6c4b;
-  /* --pColor: #165c61;
-  --sColor: rgb(36, 127, 179); */
 }
 .muted {
   opacity: 0.8;
@@ -55,7 +52,6 @@ a {
   width: 100%;
   min-height: 100vh;
   min-height: 100svh;
-
   z-index: 2;
   position: relative;
   overflow: hidden;
@@ -258,7 +254,7 @@ h1 {
 .cursor-follower {
   width: 20px;
   height: 20px;
-  background-color: #972a2a59;
+  background-color: #ea6b4ba9;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -308,10 +304,10 @@ h1 {
   width: 100%;
 }
 .services div section a {
-  background: var(--pColor);
+  background: var(--accent);
   padding: 10px;
   color: white;
-  border: 1px solid var(--pColor);
+  border: 1px solid var(--accent);
 }
 .services div section a:hover {
   transform: translateY(-10px);
@@ -446,7 +442,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   gap: 40px;
-  text-align: left;
+  text-align: justify;
   padding: 20px;
 }
 
@@ -458,8 +454,8 @@ p {
 .aboutme a {
   padding: 10px;
   color: white;
-  border: 1px solid var(--pColor);
-  background: var(--pColor);
+  border: 1px solid var(--accent);
+  background: var(--accent);
   margin-bottom: 30px;
 }
 
@@ -553,6 +549,24 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: var(--sColor);
   outline: 1px solid var(--sColor);
+  border-radius: 20px;
+}
+
+.social_media ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 40px;
+  background-color: var(--pColor);
+  margin-top: 30px;
+}
+.social_media ul li {
+  list-style: none;
+}
+.social_media ul li a {
+  color: white;
+  background: var(--accent);
+  font-size: 1.2rem;
+  padding: 10px;
   border-radius: 20px;
 }
 @media only screen and (min-width: 1024px) {
