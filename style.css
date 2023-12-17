@@ -193,7 +193,7 @@ header {
 }
 .navigation a:hover,
 .navigation_for_mobile a:hover {
-  color: var(--pColor);
+  color: var(--accent);
 }
 
 .work {
