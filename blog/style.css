@@ -19,9 +19,12 @@
   --sColor: #85a290;
   --accent: #e5dac6;
 }
+body {
+  background: white;
+}
 .hero {
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: auto;
 }
 
 header .logo {
@@ -58,4 +61,109 @@ header {
 }
 .hamburger.active section:nth-child(3) {
   transform: rotate(-45deg) translateY(-5px) translateX(7px);
+}
+.hero {
+  padding: 20px;
+  width: 100%;
+  color: var(--pColor);
+  margin-top: 40px;
+}
+.hero h1 {
+  font-weight: 900;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+.blog_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  padding: 20px;
+}
+.blog,
+.content_heading_and_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog {
+  margin-block: 30px;
+}
+.blog section:last-child p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 25px;
+}
+.blog_content .blog div img {
+  width: calc(100vw - 40px);
+  height: 200px;
+}
+.blog_content h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--pColor);
+}
+.blog h2 {
+  color: var(--pColor);
+  margin-block: 20px;
+}
+.blog .smalls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #e5dac648;
+  padding: 10px 0;
+  color: white;
+}
+.copyright small {
+  opacity: 0.7;
+  font-family: pacifico;
+  color: var(--pColor);
+}
+.copyright a {
+  color: var(--pColor);
+  font-family: pacifico;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #f9f9f9;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--sColor);
+  outline: 1px solid var(--sColor);
+  border-radius: 20px;
+}
+
+.social_media ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 40px;
+  background-color: #e5dac648;
+  margin-top: 30px;
+}
+.social_media ul li {
+  list-style: none;
+}
+.social_media ul li a {
+  color: var(--pColor);
+  background: var(--accent);
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 20px;
 }
