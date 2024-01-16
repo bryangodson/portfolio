@@ -6,5 +6,5 @@ menu.addEventListener("click", () => {
 });
 let scrollElements = document.querySelectorAll(".scrollreveal");
 scrollElements.forEach((element) => {
-  ScrollReveal({ reset: true, delay: 400 }).reveal(element);
+  ScrollReveal({ reset: false, delay: 400 }).reveal(element);
 });
