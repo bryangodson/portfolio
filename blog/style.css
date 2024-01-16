@@ -116,6 +116,9 @@ header {
   color: var(--pColor);
   margin-block: 8px;
   font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+
 
 }
 .blog p {
@@ -126,6 +129,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0.5;
+  font-size: 0.8rem;
 }
 
 .copyright {
