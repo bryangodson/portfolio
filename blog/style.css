@@ -18,6 +18,7 @@
   --pColor: #583a3d;
   --sColor: #85a290;
   --accent: #e5dac6;
+  --black:#242323;
 }
 body {
   background: white;
@@ -91,7 +92,7 @@ header {
   flex-direction: column;
 }
 .blog {
-  margin-block: 30px;
+  margin-block: 2rem;
 }
 .blog section:last-child p {
   display: flex;
@@ -103,6 +104,7 @@ header {
 .blog_content .blog div img {
   width: calc(100vw - 40px);
   height: 200px;
+  object-fit: cover;
 }
 .blog_content h1 {
   margin-bottom: 10px;
@@ -110,11 +112,17 @@ header {
   font-size: 1.5rem;
   color: var(--pColor);
 }
-.blog h2 {
+.blog a {
   color: var(--pColor);
-  margin-block: 20px;
+  margin-block: 8px;
+  font-size: 1.2rem;
+
 }
-.blog .smalls {
+.blog p {
+  color: var(--black);
+  opacity: 0.7;
+}
+ .blog .smalls {
   display: flex;
   justify-content: space-between;
   align-items: center;
