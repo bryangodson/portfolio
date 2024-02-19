@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition:background 0.3s ease
+    }
+    #button{
+      padding:10px;
+      border:0;
+      background:crimson;
+      color:white;
+      cursor:pointer
+    }
+    #button.bubble{
+      animation: bubble 0.3s 1;
+    }
+    @keyframes bubble{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.2);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <button id="button">CHANGE COLOR</button>
+  <script>
+    let button=document.querySelector('#button')
+    button.addEventListener('click',()=>{
+// generating a number between 0 and 255
+      function random(){
+        return Math.floor(Math.random()*255)
+      }
+      // constructing an rgb color. 
+      const randomColor=`rgb(${random()},${random()},${random()})`
+      // changing body style
+      document.body.style.background=randomColor;
+      // add class with button animation
+      button.classList.add('bubble');
+      // removing class
+      setTimeout(() => {
+        button.classList.remove('bubble')
+      }, 300);
+    })
+  </script>
+</body>
+</html>

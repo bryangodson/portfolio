@@ -1,31 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Pacifico&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: nunito;
+  font-family: "Nunito", sans-serif;
   transition: 250ms ease-in;
   scroll-behavior: smooth;
-}
-@font-face {
-  font-family: nunito;
-  src: url(../fonts/nunito.ttf);
-}
-@font-face {
-  font-family: pacifico;
-  src: url(../fonts/pacifico.ttf);
 }
 :root {
   --pColor: #583a3d;
   --sColor: #85a290;
   --accent: #e5dac6;
-  --black:#242323;
+  --black: #242323;
 }
 body {
-  background: white;
-}
-.hero {
-  width: auto;
-  height: auto;
+  background: rgb(255, 255, 255);
 }
 
 header .logo {
@@ -62,25 +52,10 @@ header {
 .hamburger.active section:nth-child(3) {
   transform: rotate(-45deg) translateY(-5px) translateX(7px);
 }
-.hero {
-  padding: 20px;
-  width: 100%;
-  color: var(--pColor);
-  margin-top: 40px;
-}
-.hero h1 {
-  font-weight: 900;
-}
-.hero img {
-  width: 100%;
-  height: auto;
-  padding-top: 30px;
-}
 .blog_content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
   padding: 20px;
 }
 .blog,
@@ -102,14 +77,25 @@ header {
 }
 .blog_content .blog div img {
   width: calc(100vw - 40px);
-  height: 200px;
+  height: auto;
   object-fit: cover;
 }
-.blog_content h1 {
-  margin-bottom: 10px;
+h2,
+h1 {
   text-transform: uppercase;
   font-size: 1.5rem;
   color: var(--pColor);
+  text-align: center;
+}
+h2 {
+  font-size: 1.3rem;
+}
+.hero {
+  padding: 20px;
+}
+.hero p {
+  font-size: 1rem;
+  line-height: 30px;
 }
 .blog a {
   color: var(--pColor);
@@ -117,14 +103,12 @@ header {
   font-size: 1.2rem;
   font-weight: 800;
   cursor: pointer;
-
-
 }
 .blog p {
   color: var(--black);
   opacity: 0.7;
 }
- .blog .smalls {
+.blog .smalls {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -178,4 +162,23 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.2rem;
   padding: 10px;
   border-radius: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  .hero {
+    padding: 40px;
+  }
+  .blog_content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .blog {
+    width: calc((100vw / 3.5) - 40px);
+  }
+
+  .blog_content .blog div img {
+    width: calc((100vw / 3.5) - 40px);
+  }
 }

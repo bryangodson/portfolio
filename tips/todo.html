@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   <style>
+   *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Panchang,'sans-serif';
+    /* panchang is a custom font from fontshare.com */
+   }
+   body{
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   }
+   .container{
+    width:100vw;
+    height: 80vh;
+    max-width: 400px;
+    background: #fff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    position: relative;
+}
+   .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #33333310;
+   }
+   .header h1{
+    font-size: 1rem;
+    color: #112874;
+   }
+   .header span{
+    color: white;
+    width: 30px;
+    height: 30px;
+    background-color: #c07072;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor:pointer;
+    transition:300ms ease;
+    font-size: 1.2rem;
+
+   }
+   .header span:hover{
+    opacity:0.8
+   }    
+   .plus{
+    width: 50px;
+    height: 50px;
+    background-color: #112874e3;
+    font-size:1.6rem ;
+    display: grid;
+    place-items: center;
+    color:white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor:pointer;
+    transform: scale(0.8);
+    transition: 300ms ease;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   }
+   .plus:hover{
+    transform: scale(1)perspective(100px);
+
+   }
+   
+   
+  
+   
+   </style>
+</head>
+<body>
+    <!-- let us create a container for our todo app -->
+    <div class="container">
+        <section class="header">
+            <h1>Todo List</h1>
+            <span class="material-symbols-outlined">delete</span>
+        </section>
+        <span class="material-symbols-outlined plus">
+            add
+        </span>
+    </div>
+</body>
+</html>
