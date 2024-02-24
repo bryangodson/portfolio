@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loaders.forEach((loader) => {
       loader.classList.add("loaderGone");
     });
-  }, 100);
+  }, 1000);
   setTimeout(() => {
     var typed = new Typed("#typed", {
       strings: [
